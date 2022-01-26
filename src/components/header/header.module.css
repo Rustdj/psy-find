@@ -1,7 +1,3 @@
-.wrapper {
-    
-    
-}
 .menu {
     display: flex;
     justify-content: space-around;
@@ -35,9 +31,6 @@
     font-size: 18px;
     font-weight: 600;
 }
-.blocks {
-
-}
 .toLodin {
     /* float: right; */
     text-align: center;
@@ -50,6 +43,7 @@
     letter-spacing: 9px;
 }
 .toLodin .btn {
+    outline: none;
     height: 50px;
     cursor: pointer;
     width: 270px;
@@ -60,8 +54,14 @@
     letter-spacing: 5px;
     font-weight: 500;
     color: #dc750a;
+    transition: all .2s;
 }
 .toLodin .btn:active {
     box-shadow: none;
     border: 1px solid rgba(138, 138, 143, 0.646);
+    transition: all .2s;
+}
+.toLodin .btn:hover {
+    letter-spacing: 1px;
+    font-weight: 700;
 }
