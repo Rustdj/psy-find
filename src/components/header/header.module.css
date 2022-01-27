@@ -60,6 +60,8 @@
     box-shadow: none;
     border: 1px solid rgba(138, 138, 143, 0.646);
     transition: all .2s;
+    color: #000;
+    font-size: 14px;
 }
 .toLodin .btn:hover {
     letter-spacing: 1px;

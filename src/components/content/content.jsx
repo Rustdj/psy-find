@@ -5,6 +5,7 @@ import { GoLocation } from "react-icons/go";
 import { BsPersonLinesFill } from "react-icons/bs";
 import { FaRubleSign } from "react-icons/fa";
 import Search from "./search";
+import Sorting from "./sorting/sorting";
 
 
 
@@ -43,6 +44,7 @@ const Content = () => {
         </div>
       </div>
       <Search />
+        <Sorting />
     </div>
   );
 };

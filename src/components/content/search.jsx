@@ -12,12 +12,22 @@ const Search = () => {
       <div className={classes.form}>
         <div className={classes.formBlock}>
           <div className={classes.formWrap}>
-            <div className={classes.formContainer} >
-              <div className={classes.form} >
-                <input placeholder="Психолог" type="text" />
+            <div className={classes.formContainer}>
+              <div className={classes.form}>
+                <input
+                  className={classes.formInput}
+                  required
+                  type="text"
+                />
+                <label className={classes.labelPsy}>Психолог</label>
               </div>
               <div className={classes.form}>
-                <input placeholder="Метро" type="text" />
+                <input
+                  className={classes.formInput}
+                  required
+                  type="text"
+                />
+                <label className={classes.label}>Метро</label>
               </div>
               <SearchBtn />
             </div>
