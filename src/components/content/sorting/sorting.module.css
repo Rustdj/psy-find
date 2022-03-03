@@ -1,0 +1,117 @@
+.listPage {
+    padding: 0;
+}
+.listPageBox {
+    padding: 0 24px;
+}
+
+.topCont {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin: 50px;
+}
+.specialistic {
+    margin-left: 20px;
+}
+
+/* фильтр */
+
+
+.filterReception {
+    display: flex;
+    
+}
+.filterBtn {
+    position: relative;
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-start-end-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: all .4s;
+}
+.filterBtns {
+    position: relative;
+    height: 30px;
+    width: 100px;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: all .4s;
+}
+.filterButton {
+    position: relative;
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-start-start-radius: 10px;
+    border-bottom-left-radius: 10px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: all .4s;
+}
+.filterBtn:hover {
+    background-color: #dc750a;
+    transition: all .4s;
+    letter-spacing: 1px;
+}
+.filterBtns:hover {
+    background-color: #dc750a;
+    transition: all .4s;
+    letter-spacing: 1px;
+}
+.filterButton:hover {
+    background-color: #dc750a;
+    transition: all .4s;
+    letter-spacing: 1px;
+}
+.filterBtn::before {
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 1px;
+    background-color: #7c7575;
+    left: 0px;
+}
+.filterBtns::before {
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 1px;
+    background-color: #7c7575;
+    left: 0px;
+
+}
+
+/* ======== */
+.filterBlock {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.filterSort {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    align-items: center;
+    color: gray;
+}
+.filterItem {
+    margin-left: 20px;
+}
+.button {
+    width: 210px;
+    height: 31px;
+    border-radius: 10px;
+    border: none;
+    font-family: Poppins, sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+
+

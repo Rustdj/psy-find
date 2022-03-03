@@ -13,33 +13,35 @@ const Sorting = () => {
           </div>
         </article>
       </div>
-      <div>
+      <>
         <div className={classes.filter}>
           <div className={classes.filterSort}>
-            <div filterReception>
-              <button className={classes.filterBtn}>В клинике</button>
-              <button className={classes.filterBtn}>Онлайн</button>
+            <div className={classes.filterReception}>
+              <button className={classes.filterButton}>В клинике</button>
+              <button className={classes.filterBtns}>Онлайн</button>
               <button className={classes.filterBtn}>На дому</button>
             </div>
           </div>
-          <div className={classes.filterSort}>
-            <div className={classes.item}>Сортировать</div>
-            <div>
-              <div className={classes.filterItem}>
-                <span className={classes.span}>По популярности</span>
-              </div>
+          <div className={classes.filterBlock}>
+            <div className={classes.filterSort}>
+              <div className={classes.item}>Сортировать</div>
+              <>
+                <div className={classes.filterItem}>
+                  <button className={classes.button}>По популярности</button>
+                </div>
+              </>
             </div>
-          </div>
-          <div className={classes.filterSort}>
-            <div className={classes.item}>Дата приема</div>
-            <div>
-              <div className={classes.filterItem}>
-                <span className={classes.span}>Расписание на все дни</span>
+            <div className={classes.filterSort}>
+              <div className={classes.item}>Дата приема</div>
+              <div>
+                <div className={classes.filterItem}>
+                  <button className={classes.button}>Расписание на все дни</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </>
     </div>
   );
 };
