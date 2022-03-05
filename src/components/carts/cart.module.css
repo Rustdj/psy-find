@@ -9,9 +9,136 @@
 .wrapper {
     display: flex;
     justify-content: space-around;
-    padding: 30px;
+    padding: 20px;
     
 }
 .pageRight {
     display: flex;
+}
+.ratingMono {
+    margin-left: 22px;
+    margin-top: 10px;
+}
+.pageLeft {
+    font-size: 14px;
+    text-align: center;
+}
+.value  span{
+    display: inline-block;
+    color: #000;
+    font-family: Poppins, sans-serif;
+    
+}
+.valueLabel {
+    display: inline-block;
+    color: #000;
+    font-family: Poppins, sans-serif;
+}
+
+/* RightPart */
+
+
+.pageCardInfo {
+
+}
+.infoBlock {
+    margin-top: 20px;
+    
+}
+.doctorName a {
+    text-decoration: none;
+    color: red;
+}
+.phoneLink a {
+    text-decoration: none;
+    color: red;
+}
+.receptionButtons {
+    
+}
+.title {
+    margin-top: 20px;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: grey;
+}
+.list {
+    border: 1px solid red;
+    border-radius: 10px;
+    width: 140px;
+    font-size: 14px;
+    text-align: center;
+}
+.buttonTop {
+    position: relative;
+}
+.iconBlock {
+    position: absolute;
+    top: -28px;
+    left: 10px;
+}
+.iconToolTips {
+    position: absolute;
+    right: 10px;
+    top: -28px;
+}
+.buttonLabel {
+    margin-top: 38px;
+}
+.priceActual {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.color {
+    color: gray;
+}
+
+
+.pagePhone {
+    margin-top: 30px;
+}
+.phoneLink {
+    margin-top: 10px;
+}
+.tipMessage {
+    margin-top: 30px;
+}
+
+/* Регистрация */
+
+.itemCaption {
+    margin-bottom: 20px;
+}
+.time {
+    background-color: darksalmon;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    padding: 5px 10px 5px 10px;
+}
+.btnBottom {
+    margin-top: 20px;
+    margin-left: 13px;
+}
+
+/* metro */
+
+.clinicLocation {
+    position: relative;
+}
+.clinicStations {
+    position: absolute;
+    left: 80px;
+    top: 50px;
+}
+.clinicStation a {
+    display: flex;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #000;
+    margin-top: 10px;
 }

@@ -1,39 +1,40 @@
 import React from "react";
 import c from "./cart.module.css";
-import Rating from '@mui/material/Rating';
-import PropTypes from 'prop-types';
+import Rating from "@mui/material/Rating";
+import PropTypes from "prop-types";
 import ava from "../ava.svg";
-import SentimentVeryDissatisfiedIcon from '@mui/icons-material/SentimentVeryDissatisfied';
-import SentimentDissatisfiedIcon from '@mui/icons-material/SentimentDissatisfied';
-import SentimentSatisfiedIcon from '@mui/icons-material/SentimentSatisfied';
-import SentimentSatisfiedAltIcon from '@mui/icons-material/SentimentSatisfiedAltOutlined';
-import SentimentVerySatisfiedIcon from '@mui/icons-material/SentimentVerySatisfied';
+import ApartmentIcon from '@mui/icons-material/Apartment';
+import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';
+import SentimentVeryDissatisfiedIcon from "@mui/icons-material/SentimentVeryDissatisfied";
+import SentimentDissatisfiedIcon from "@mui/icons-material/SentimentDissatisfied";
+import SentimentSatisfiedIcon from "@mui/icons-material/SentimentSatisfied";
+import SentimentSatisfiedAltIcon from "@mui/icons-material/SentimentSatisfiedAltOutlined";
+import SentimentVerySatisfiedIcon from "@mui/icons-material/SentimentVerySatisfied";
 import classes from "../content/sorting/sorting.module.css";
 
 export default function CartLayaut() {
-
   //rating-smile----------------------------
 
   const customIcons = {
     1: {
       icon: <SentimentVeryDissatisfiedIcon />,
-      label: 'Very Dissatisfied',
+      label: "Very Dissatisfied",
     },
     2: {
       icon: <SentimentDissatisfiedIcon />,
-      label: 'Dissatisfied',
+      label: "Dissatisfied",
     },
     3: {
       icon: <SentimentSatisfiedIcon />,
-      label: 'Neutral',
+      label: "Neutral",
     },
     4: {
       icon: <SentimentSatisfiedAltIcon />,
-      label: 'Satisfied',
+      label: "Satisfied",
     },
     5: {
       icon: <SentimentVerySatisfiedIcon />,
-      label: 'Very Satisfied',
+      label: "Very Satisfied",
     },
   };
 
@@ -45,7 +46,7 @@ export default function CartLayaut() {
   IconContainer.propTypes = {
     value: PropTypes.number.isRequired,
   };
-  
+
   //rating-smile-------------------------
 
   return (
@@ -58,20 +59,21 @@ export default function CartLayaut() {
                 <img src={ava} alt="ava" />
               </div>
             </a>
-            <div title="Добавить врача в избранное" className={c.buttonLike}>
-              <Rating
-                name="highlight-selected-only"
-                defaultValue={2}
-                IconContainerComponent={IconContainer}
-                highlightSelectedOnly
-              />
-            </div>
+            <div
+              title="Добавить врача в избранное"
+              className={c.buttonLike}
+            ></div>
           </div>
           <a className={c.starValue} href="">
             <div className={c.ratingDoctor}>
               <div className={c.ratingStars}>
                 <div className={c.ratingMono}>
-                  <img src="" alt="" />
+                  <Rating
+                    name="highlight-selected-only"
+                    defaultValue={2}
+                    IconContainerComponent={IconContainer}
+                    highlightSelectedOnly
+                  />
                 </div>
               </div>
               <div className={c.recommendations}>
@@ -104,8 +106,8 @@ export default function CartLayaut() {
                     <div className={c.buttonClinic}>
                       <div className={c.buttonContent}>
                         <div className={c.buttonTop}>
-                          <div className={c.iconBlock}></div>
-                          <div className={c.iconToolTips}></div>
+                          <div className={c.iconBlock}><ApartmentIcon className={c.color}/></div>
+                          <div className={c.iconToolTips}><ErrorOutlineIcon className={c.color}/></div>
                         </div>
                         <div className={c.buttonLabel}>В клинике</div>
                         <div className={c.priceBlock}>
@@ -122,7 +124,7 @@ export default function CartLayaut() {
                 </div>
               </div>
               <div className={c.phoneBlock}>
-                <div className={c.pagePhole}>
+                <div className={c.pagePhone}>
                   <div className={c.pholeLabel}>Телефон для записи</div>
                   <div className={c.phoneLink}>
                     <a href="tel:79650033900">8(965)00-339-00</a>
@@ -169,7 +171,7 @@ export default function CartLayaut() {
                       <a className={c.metroStation} href="">
                         <div className={c.label}>
                           <span className={c.icon}></span>
-                          <span className={c.name}>Кропоткинская</span>
+                          <span className={c.name}>Кропоткинская -</span>
                         </div>
                         <div className={c.dist}>
                           <img className={c.svgIcon} src="" alt="" />
@@ -181,7 +183,7 @@ export default function CartLayaut() {
                       <a className={c.metroStation} href="">
                         <div className={c.label}>
                           <span className={c.icon}></span>
-                          <span className={c.name}>Арбатская</span>
+                          <span className={c.name}>Арбатская -</span>
                         </div>
                         <div className={c.dist}>
                           <img className={c.svgIcon} src="" alt="" />
@@ -193,7 +195,7 @@ export default function CartLayaut() {
                       <a className={c.metroStation} href="">
                         <div className={c.label}>
                           <span className={c.icon}></span>
-                          <span className={c.name}>Смоленская</span>
+                          <span className={c.name}>Смоленская -</span>
                         </div>
                         <div className={c.dist}>
                           <img className={c.svgIcon} src="" alt="" />
