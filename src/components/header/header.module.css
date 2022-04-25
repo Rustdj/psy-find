@@ -13,11 +13,10 @@
     content: " ";
     position: absolute;
     height: 2px;
-    width: 20px;
-    background-color: black;
-    top: 101px;
-    transform: rotate(118deg);
-    right: 375px;
+    width: 6px;
+    background-color: #3d58cb;
+    top: 73px;
+    right: 165px;
 }
 .logoBlock img {
     width: 190px;
@@ -27,10 +26,12 @@
     text-align: center;
 }
 .infoBlock {
+    position: relative;
     display: flex;
     font-size: 18px;
     font-weight: 600;
 }
+
 .toLodin {
     /* float: right; */
     text-align: center;
@@ -67,3 +68,4 @@
     letter-spacing: 1px;
     font-weight: 700;
 }
+

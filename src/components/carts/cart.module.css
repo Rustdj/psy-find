@@ -1,7 +1,10 @@
 .doctorContainer{
     width: 1000px;
     position: absolute;
-    left: 18%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: auto;
     border-radius: 10px;
     background-color: #ece8e8;
     box-shadow: 1px 1px 15px grey;
@@ -68,6 +71,7 @@
     width: 140px;
     font-size: 14px;
     text-align: center;
+    cursor: pointer;
 }
 .buttonTop {
     position: relative;

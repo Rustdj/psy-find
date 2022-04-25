@@ -4,6 +4,9 @@ import './index.css';
 import App from './App';
 
 
+//store.dispatch({type: 'INC'}); // изменение состояния
+
+
 ReactDOM.render (
   <React.StrictMode>
       <App />
