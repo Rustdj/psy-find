@@ -1,7 +1,7 @@
 import './App.css';
-import CartLayaut from './components/carts/cartLayaut';
-import Content from './components/content/content';
-import Header from './components/header/header.jsx';
+import CartLayaut from './components/carts/CartLayaut.jsx';
+import Content from './components/content/Content.jsx';
+import Header from './components/header/Header.jsx';
 
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
       <Header />
       <Content />
       <CartLayaut/>
-      
+      <CartLayaut/>
     </>
     
   );

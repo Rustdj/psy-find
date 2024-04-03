@@ -1,5 +1,5 @@
 import React from "react";
-import SearchBtn from "../buttons/searchBtn";
+import SearchBtn from "../buttons/SearchBtn";
 import "./search.module.css";
 import classes from "./search.module.css";
 

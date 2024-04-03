@@ -4,8 +4,8 @@ import "./content.module.css";
 import { GoLocation } from "react-icons/go";
 import { BsPersonLinesFill } from "react-icons/bs";
 import { FaRubleSign } from "react-icons/fa";
-import Search from "./search";
-import Sorting from "./sorting/sorting";
+import Search from "./Search";
+import Sorting from "./sorting/Sorting";
 
 
 
