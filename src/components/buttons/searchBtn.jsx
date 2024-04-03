@@ -6,7 +6,7 @@ const SearchBtn = () => {
   return (
     <div>
       <div className={classes.buttons}>
-        <button className={classes.btn}>Найти</button>
+        <button className={classes.btn}>Search</button>
       </div>
     </div>
   );
